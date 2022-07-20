@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* background:hsla(48, 78%, 82%, 1);
+    background: linear-gradient(90deg,hsla(48, 78%, 82%, 1) 0%, hsla(340,87%,59%,1) 100%);
+    background: -moz-linear-gradient(90deg,hsla(48, 78%, 82%, 1) 0%, hsla(340,87%,59%,1) 100%);
+    background: -webkit-linear-gradient(90deg,hsla(48, 78%, 82%, 1) 0%, hsla(340,87%,59%,1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5E6AD', endColorstr='#F13C77', GradientType=1); */
+
+/* background: hsla(217, 100%, 50%, 1);
+background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 ); */
+
+/* background: #83a4d4;  */
+/* background-color: green;
+background: -webkit-linear-gradient(to right,red, blue);  
+background: linear-gradient(to right,red, blue);  */
+
+/* background: #1488CC; 
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+background: linear-gradient(to right, #2B32B2, #1488CC); */
+
+
+/* background: #83a4d4;  */
+/* background-color: green;
+background: -webkit-linear-gradient(to left,#83a4d4, #b6fbff);  
+background: linear-gradient(to left,#83a4d4, #b6fbff);  */
+
+
+/* background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4);   */
+background-color:rgb(220, 220, 220);
+
+
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:25px 60px;
+    background: #1488CC; 
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+}
+
+.brand{
+    font-weight:900;
+    font-size:20px;
+    color:#fff;
+}
+
+.navlists > li{
+    display:inline-block;
+    margin-left:19px;
+}
+
+.navlists > li > a{
+    color:#fff;
+}
+
+.get-started-btn{
+    border:2px solid #fff;
+    padding:8px 14px;
+    border-radius:4px;
+    background-color: transparent;
+    box-shadow:1px 1px 5px gray;
+    color:#fff;
+}
+
+.main-area{
+    min-height:90vh;
+    display:flex;
+    align-items: center;
+    padding:10px 60px;
+    position:relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    background: #1488CC; 
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+background: linear-gradient(to right, #2B32B2, #1488CC);
+}
+
+.content-head{
+    font-size:3.5rem;
+    color:#fff;
+    letter-spacing: 2px;
+}
+.content-paragraph{
+    margin-top:10px;
+    color:#fff;
+}
+.links{
+    color:rgb(212, 207, 207);
+}
+.content-btn{
+    padding:10px 35px;
+    border:none;
+    border-radius:20px;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: rgb(6, 145, 6);
+    box-shadow:0px 3px 10px rgb(6, 145, 6);
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.content,.form-area{
+    width:50%;
+}
+
+.form-area{
+    display: flex;
+    justify-content:flex-end;
+}
+.form{
+    width:350px;
+    background-color:#fff;
+    /* padding:45px 40px; */
+    padding:35px 40px 45px 40px;
+    box-sizing: border-box;
+    border-radius:4px;
+    box-shadow:7px 7px 30px -10px black;
+}
+.form > span{
+    font-size:20px;
+    display:block;
+    text-align:center;
+    font-weight:bolder;
+}
+.form-input:nth-child(2){
+    margin-top:15px;
+    width:100%;
+}
+.form-input{
+    margin-top:15px;
+}
+.form-input  input,select{
+    width:100%;
+    box-sizing: border-box;
+    padding:9px 10px;
+    border:none;
+    border-radius:4px;
+    background-color:rgb(220, 220, 220);
+    outline: none;
+}
+.form-input > select{
+    cursor: pointer;
+}
+.form-input > input[type=submit]{
+    border-radius:40px;
+    color:white;
+    background-color:#3457D5;
+    cursor: pointer;
+    box-shadow:0px 3px 10px #3457D5;
+}
+
+.message,.messageEmail,.messageCat,.messagePhone{
+    font-size:12px;
+    color:red;
+    display:none;
+}
+/* .wave{
+    position:absolute;
+    bottom:-70px;
+    left:0;
+    width:100%;
+    border:2px solid black;
+    box-sizing: border-box;
+} */
