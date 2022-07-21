@@ -8,35 +8,6 @@
 }
 
 body{
-    /* background:hsla(48, 78%, 82%, 1);
-    background: linear-gradient(90deg,hsla(48, 78%, 82%, 1) 0%, hsla(340,87%,59%,1) 100%);
-    background: -moz-linear-gradient(90deg,hsla(48, 78%, 82%, 1) 0%, hsla(340,87%,59%,1) 100%);
-    background: -webkit-linear-gradient(90deg,hsla(48, 78%, 82%, 1) 0%, hsla(340,87%,59%,1) 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5E6AD', endColorstr='#F13C77', GradientType=1); */
-
-/* background: hsla(217, 100%, 50%, 1);
-background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 ); */
-
-/* background: #83a4d4;  */
-/* background-color: green;
-background: -webkit-linear-gradient(to right,red, blue);  
-background: linear-gradient(to right,red, blue);  */
-
-/* background: #1488CC; 
-background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-background: linear-gradient(to right, #2B32B2, #1488CC); */
-
-
-/* background: #83a4d4;  */
-/* background-color: green;
-background: -webkit-linear-gradient(to left,#83a4d4, #b6fbff);  
-background: linear-gradient(to left,#83a4d4, #b6fbff);  */
-
-
-/* background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4);   */
 background-color:rgb(220, 220, 220);
 
 
@@ -84,8 +55,8 @@ nav{
     position:relative;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     background: #1488CC; 
-background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-background: linear-gradient(to right, #2B32B2, #1488CC);
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #1488CC);
 }
 
 .content-head{
@@ -123,7 +94,6 @@ background: linear-gradient(to right, #2B32B2, #1488CC);
 .form{
     width:350px;
     background-color:#fff;
-    /* padding:45px 40px; */
     padding:35px 40px 45px 40px;
     box-sizing: border-box;
     border-radius:4px;
@@ -167,11 +137,92 @@ background: linear-gradient(to right, #2B32B2, #1488CC);
     color:red;
     display:none;
 }
-/* .wave{
-    position:absolute;
-    bottom:-70px;
-    left:0;
-    width:100%;
-    border:2px solid black;
-    box-sizing: border-box;
-} */
+
+
+/* for tablet devices */
+@media screen and (max-width:768px)
+{
+    nav{
+        position:relative;
+    }
+    .navlists{
+        width:100%;
+        margin:0;
+        position:absolute;
+        top:100%;
+        left:0;
+        z-index:99;
+        background: #1488CC; 
+        background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+        background: linear-gradient(to right, #2B32B2, #1488CC);
+        box-shadow:4px 4px 10px #2B32B2;
+        display:none;
+        -webkit-animation-name: slideLeft;
+        animation-name: slideInLeft;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    /* slide in effect for navlist */
+    @-webkit-keyframes slideInLeft {
+        0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        }
+        @keyframes slideInLeft {
+        0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        } 
+    .show{
+        display:block;
+    }
+
+    .navlists > li{
+        display:block;
+        margin:15px 0;
+        padding:0 60px;
+    }
+    .menu > i{
+        font-weight:bold;
+        color:#fff;
+    }
+    .main-area{
+        flex-direction:column;
+        min-height:auto;
+    }
+    .content{
+        width:100%;
+        margin-top:100px;
+    }
+    .content > .content-head{
+        font-size:2.8rem;
+    }
+    .content > button{
+        display:block;
+    }
+    .form-area{
+        width:100%;
+        justify-content:center;
+        margin-bottom:80px;
+    }
+    .form{
+        margin-top:50px;
+    }
+
+}
+

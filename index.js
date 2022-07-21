@@ -143,6 +143,13 @@ categories.addEventListener('change',()=>{
     }else if(categories.value == "")
     {
         categories.style.border = "none";
-        // messageCat.innerHTML = "";
     }
+})
+
+// Responsive navbar
+const navlists = document.querySelector('.navlists');
+const menu = document.querySelector('.menu');
+
+menu.addEventListener('click', ()=>{
+    navlists.classList.toggle('show');
 })
