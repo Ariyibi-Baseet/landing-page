@@ -46,6 +46,9 @@ nav{
     box-shadow:1px 1px 5px gray;
     color:#fff;
 }
+.menu{
+    display:none;
+}
 
 .main-area{
     min-height:90vh;
@@ -196,6 +199,9 @@ nav{
         display:block;
         margin:15px 0;
         padding:0 60px;
+    }
+    .menu{
+        display:block;
     }
     .menu > i{
         font-weight:bold;
