@@ -22,6 +22,11 @@ submitBtn.addEventListener('click', (e) => {
         message.style.display = "block"
         message.innerHTML = "input field cannot be empty";
     }
+    else if(fullName.value[0].toLowerCase() === fullName.value[0])
+    {
+        message.style.display = "block"
+        message.innerHTML = "name character should begin with uppercase";        
+    }
     else if(fullName.value.length <= 20)
     {
         message.style.display = "block"
