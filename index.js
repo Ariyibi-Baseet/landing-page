@@ -16,8 +16,6 @@ submitBtn.addEventListener('click', (e) => {
     let singaporePhoneCode = /[+65]/g;
     let validMail = /[@gmail.com]/g;
     let validSeneca = /[@seneca.com]/g;
-    // let validSeneca = email.value + "@seneca.com";
-    // const resultValidEmail = validEmail.indexOf(email.value);
 
     if(fullName.value == "" || fullName.value == null)
     {
@@ -75,7 +73,25 @@ submitBtn.addEventListener('click', (e) => {
         messageCat.innerHTML = "please select an option!";
     }
     else{
-        alert(fullName.value)
+        swal({
+            text:`
+            ${fullName.value} \n 
+             ${email.value} \n 
+             ${phone.value} \n 
+             ${categories.value}`,
+            icon: "success",
+            button: "okay",
+          });
+
+
+          fullName.value = "";
+          email.value = "";
+          phone.value = "";
+          categories.value = "";
+          fullName.style.border = "none";
+          email.style.border = "none";
+          phone.style.border = "none";
+          categories.style.border = "none";
     }
 
     e.preventDefault()
@@ -125,12 +141,3 @@ categories.addEventListener('change',()=>{
         // messageCat.innerHTML = "";
     }
 })
-
-
-// phone.addEventListener('keyup', ()=>{
-//     if(!phone.value.includes(mexicoCode))
-//     {
-//         messagePhone.style.display = "block";
-//         messagePhone.innerHTML = "cannot accept number! it has to be Mexico or Singapore or United States";
-//     }
-// })
