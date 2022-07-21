@@ -82,8 +82,8 @@ submitBtn.addEventListener('click', (e) => {
             text:`
             ${fullName.value} \n 
              ${email.value} \n 
-             ${phone.value} \n 
-             ${categories.value}`,
+             ${categories.value} \n 
+             ${phone.value}`,
             icon: "success",
             button: "okay",
           });
